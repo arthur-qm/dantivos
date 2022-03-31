@@ -5,6 +5,8 @@ header > div {
     justify-content: center;
     height: 100vh;
     background-color: rgb(160, 151, 134);
+    background-image: url('../imgs/old-paper.jpg');
+    filter:brightness(0.7);
 }
 
 header > div > h1 {
@@ -19,6 +21,7 @@ header > div > h1 > i {
 header > div > p {
     text-align: center;
     width: 50vw;
+    font-size: 1.3rem;
 }
 
 @keyframes rotation {
