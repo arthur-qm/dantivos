@@ -1,12 +1,23 @@
+:root {
+    --main-bg-color: rgb(227, 194, 149);
+    --dark-bg-color: rgb(162,139,107);
+    height: 100%;
+}
+
+body {
+    background-color: var(--dark-bg-color);
+}
+
 header > div {
     display: flex;
     align-items: center;
     flex-direction: column;
     justify-content: center;
     height: 100vh;
-    background-color: rgb(160, 151, 134);
+    background-color: var(--dark-bg-color);
     background-image: url('../imgs/old-paper.jpg');
     filter:brightness(0.7);
+    clip-path: polygon(100% 0, 0 0, 0% 70%, 100% 100%);
 }
 
 header > div > h1 {
@@ -32,4 +43,8 @@ header > div > p {
     to {
         transform: rotate(360deg);
     }
+}
+
+main > div {
+    background-image: linear-gradient(to bottom, var(--dark-bg-color), var(--main-bg-color));
 }
