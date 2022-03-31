@@ -1,0 +1,17 @@
+header > div {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    height: 100vh;
+    background-color: rgb(160, 151, 134);
+}
+
+header > div > h1 {
+    font-size: 4rem;
+}
+
+header > div > p {
+    text-align: center;
+    width: 50vw;
+}
