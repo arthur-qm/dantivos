@@ -11,7 +11,22 @@ header > div > h1 {
     font-size: 4rem;
 }
 
+header > div > h1 > i {
+    display: inline-block;
+    animation: rotation 8s linear infinite;
+}
+
 header > div > p {
     text-align: center;
     width: 50vw;
+}
+
+@keyframes rotation {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
 }
