@@ -1,0 +1,13 @@
+.desc-dant {
+    width: 90vw;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.desc-dant > h2 {
+    width: 60vw;
+}
+
+.desc-dant > p {
+    width: 70vw;
+}
