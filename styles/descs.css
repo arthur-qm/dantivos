@@ -4,10 +4,34 @@
     margin-right: auto;
 }
 
-.desc-dant > h2 {
-    width: 60vw;
+.desc-dant h2 {
+    width: 50vw;
 }
 
-.desc-dant > p {
-    width: 70vw;
+.desc-dant p {
+    width: 50vw;
+}
+
+.flex-with-img {
+    display: flex;
+}
+
+.flex-with-img .img-container {
+    margin-left: auto;
+    width: 30vw;
+    height: 30vh;
+    align-self: center;
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+.image {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.image img {
+    width: 100%;
+    height: 100%;
 }
