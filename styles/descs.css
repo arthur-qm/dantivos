@@ -42,3 +42,14 @@
     width: 100%;
     font-style: italic;
 }
+
+.devices > div {
+    margin-bottom: 30px;
+}
+
+.devices {
+    padding-bottom: 30px;
+}
+.desc-dant > .flex-with-img:first-child {
+    padding-bottom: 100px;
+}
