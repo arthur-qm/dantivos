@@ -6,6 +6,9 @@
 
 body {
     background-image: linear-gradient(to bottom, var(--dark-bg-color), var(--main-bg-color));
+    height: 100%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
 }
 
 .centraliza {
