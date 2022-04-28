@@ -3,6 +3,7 @@ const COLS = 10;
 
 var lefts = [];
 var colors = [];
+var active_hover = 0;
 
 for (let i = 0; i < ROWS; i++) {
     lefts.push(COLS);
@@ -72,3 +73,27 @@ function change(row, column) {
 for (let i = 0; i < ROWS; i++)
     for (let j = 0; j < COLS; j++)
         abacus.querySelector(`#o${i}-${j}`).setAttribute('onclick', `change(${i}, ${j});`);
+
+for (let i = 0; i < ROWS; i++)
+    abacus.querySelector(`#r${i}`).addEventListener('mouseover', function (ev) {
+        active_hover = i;
+    });
+
+document.addEventListener('keydown', function (e) {
+    let x = -1;
+    
+    if (e.code === 'Minus') {
+        x = 10;
+    } else {
+        x = parseInt(e.code.slice(-1));
+    }
+
+    if (!(typeof(x) === typeof(1) && 0 <= x && x <= 10)) return;
+    
+    if (lefts[active_hover] == x) return;
+
+    if (lefts[active_hover] < x)
+        change(active_hover, x-1);
+    else
+        change(active_hover, x);
+});
