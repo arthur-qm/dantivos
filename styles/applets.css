@@ -1,3 +1,13 @@
+:root {
+    --main-bg-color: rgb(227, 194, 149);
+    --dark-bg-color: rgb(162,139,107);
+    height: 100%;
+}
+
+body {
+    background-image: linear-gradient(to bottom, var(--dark-bg-color), var(--main-bg-color));
+}
+
 .centraliza {
     margin-left: 10%;
     margin-right: 10%;
