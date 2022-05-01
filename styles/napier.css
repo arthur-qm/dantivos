@@ -11,7 +11,3 @@
     height: 518px;
     overflow-x:auto;
 }
-
-.displays:hover {
-    box-shadow: 10px 10px 8px var(--dark-bg-color);
-}
