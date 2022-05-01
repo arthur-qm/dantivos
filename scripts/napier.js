@@ -32,6 +32,7 @@ col_ini.setAttribute('src', urls[urls.length-1])
 
 displays.appendChild(col_ini);
 
+
 function addcol(x) {
     if (x <= 9) {
         let colx = document.createElement('img');
@@ -44,3 +45,21 @@ function addcol(x) {
         displays.removeChild(displays.lastChild);
     }
 }
+
+document.addEventListener('keydown', function (e) {
+
+    if (!displays.matches(':hover')) return;
+
+    let x = -1;
+    
+    if (e.code === 'KeyX' || e.code === 'Minus') {
+        x = 10;
+    } else {
+        x = parseInt(e.code.slice(-1));
+    }
+
+    if (!(typeof(x) === typeof(1) && 0 <= x && x <= 10)) return;
+
+    addcol(x);
+
+});
