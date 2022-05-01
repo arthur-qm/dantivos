@@ -1,13 +1,12 @@
 #simu {
     height:fit-content;
     display: block;
+    padding-bottom: 0;
+    padding-top: 0;
 }
 
 .displays {
     display: flex;
     height: 518px;
-}
-
-div {
-    border: 1px solid black;
+    overflow-x:auto;
 }
