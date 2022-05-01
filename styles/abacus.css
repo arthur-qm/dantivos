@@ -2,10 +2,6 @@ main > div {
     margin-top: 50px;
 }
 
-h1 {
-    text-align: center;
-}
-
 .unity {
     width: 20px;
     border-radius: 5px;
@@ -24,17 +20,6 @@ h1 {
     height: 40px;
     margin-left: 0px;
     margin-right: 0px;
-}
-
-#simu {
-    margin-top: 10px;
-    display: flex;
-    height: 500px;
-    flex-direction: column;
-    justify-content: space-between;
-    padding-bottom: 10px;
-    padding-top: 10px;
-    border: 1px solid black;
 }
 
 .push {

@@ -15,3 +15,18 @@ body {
     margin-left: 10%;
     margin-right: 10%;
 }
+
+#simu {
+    margin-top: 10px;
+    display: flex;
+    height: 500px;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    border: 1px solid black;
+}
+
+h1 {
+    text-align: center;
+}
