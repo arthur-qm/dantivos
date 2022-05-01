@@ -1,0 +1,13 @@
+#simu {
+    height:fit-content;
+    display: block;
+}
+
+.displays {
+    display: flex;
+    height: 518px;
+}
+
+div {
+    border: 1px solid black;
+}
