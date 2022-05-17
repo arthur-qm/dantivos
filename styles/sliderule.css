@@ -1,0 +1,28 @@
+main > div {
+  margin-top: 50px;
+}
+
+main > div > div:first-child{
+  position: relative;
+}
+
+#simulador {
+  width: max-content;
+  margin: 70px 0 50px 10%;
+  position: relative;
+  height: 305px;
+}
+
+#simulador div:not(:first-child){
+  position: absolute;
+}
+
+.metal{
+  top: 77px;
+}
+
+#flip {
+  position: absolute;
+  right: 50px;
+  top: 15px;
+}
