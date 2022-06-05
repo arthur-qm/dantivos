@@ -48,3 +48,7 @@ header > div > p {
 main > div {
     background-image: linear-gradient(to bottom, var(--dark-bg-color), var(--main-bg-color));
 }
+
+#simus {
+    margin-bottom: 30px;
+}
