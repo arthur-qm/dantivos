@@ -8,7 +8,8 @@ let metal = document.querySelectorAll(".metal")
 
 let btnFlip = document.querySelector("#flip")
 
-let rulex = ruleMiddle.getBoundingClientRect().left, cursorx = cursor.getBoundingClientRect().left, flip = false;
+let rulex = ruleMiddle.getBoundingClientRect().left, cursorx = cursor.getBoundingClientRect().left;
+let flip = 0;
 
 images.forEach(img => {
   img.setAttribute("draggable", false)
@@ -29,15 +30,19 @@ function fliprule(){
   
   ruleTop.children[0].setAttribute("src", !flip ? "./imgs/sliderule/cima1.jpg" : "./imgs/sliderule/cima2.jpg")
   
-  ruleMiddle.style.top = `${!flip ? 77 : 92}px`
+  ruleMiddle.style.top = `${parseInt(ruleMiddle.style.top.slice(0, -2)) + 15 * ( 2 * flip - 1)}px`
   ruleMiddle.children[0].setAttribute("src", !flip ? "./imgs/sliderule/meio1.jpg" : "./imgs/sliderule/meio2.jpg")
   
-  ruleBottom.style.top = `${!flip ? 77 + 133 : 92 + 133}px`
+  ruleBottom.style.top = `${parseInt(ruleBottom.style.top.slice(0, -2)) + 15 * ( 2 * flip - 1)}px`
   ruleBottom.children[0].setAttribute("src", !flip ? "./imgs/sliderule/baixo1.jpg" : "./imgs/sliderule/baixo2.jpg")
 
   metal.forEach(div => {
-    div.style.top = `${!flip ? 77 : 92}px`
-    div.style.left ? div.style.left = `${-4 * flip}px` : div.style.right = `${4 * flip}px`
+    div.style.top = `${parseInt(div.style.top.slice(0, -2)) + 14 * ( 2 * flip - 1)}px`
+    if (div.id !== "mdireito") {
+      div.style.left = `${-4 * flip}px`
+    } else {
+      div.style.left = `${parseInt(div.style.left.slice(0, -2)) - 4*(2 * flip - 1)}px`
+    }
   })
 }
 
