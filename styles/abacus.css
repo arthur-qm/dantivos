@@ -25,3 +25,10 @@ main > div {
 .push {
     margin-left: auto;
 }
+
+#simu {
+    width: min(500px, 100%);
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 30px;
+}
