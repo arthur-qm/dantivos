@@ -8,7 +8,8 @@ let metal = document.querySelectorAll(".metal")
 
 let btnFlip = document.querySelector("#flip")
 
-let rulex = ruleMiddle.getBoundingClientRect().left, cursorx = cursor.getBoundingClientRect().left;
+let rulex = ruleMiddle.getBoundingClientRect().left;
+let cursorx = cursor.getBoundingClientRect().left;
 let flip = 0;
 
 images.forEach(img => {
