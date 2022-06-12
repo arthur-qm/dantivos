@@ -1,5 +1,7 @@
 main > div {
   margin-top: 50px;
+
+  text-align: center;
 }
 
 main > div > div:first-child{
@@ -25,4 +27,12 @@ main > div > div:first-child{
   position: absolute;
   right: 50px;
   top: 15px;
+}
+
+.draggable{
+  touch-action: none;
+}
+
+.italic{
+  font-style: italic !important;
 }
