@@ -24,3 +24,12 @@ main > div {
   margin-left: auto;
   margin-right: auto;
 }
+
+#modelo-regua{
+  text-align: center;
+  font-style: italic;
+}
+
+.draggable{
+  touch-action: none;
+}
