@@ -9,10 +9,11 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
     <link rel="stylesheet" href="./styles/applets.css">
     <link rel="stylesheet" href="./styles/napier.css">
+    <link rel="stylesheet" href="./styles/navbar.css">
 </head>
 <body>
     <header>
-        <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+        <nav class="autohide navbar navbar-expand-md navbar-dark bg-dark">
             <a class="navbar-brand" href="index.html">Dantiv<i class="bi bi-gear"></i>s</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -20,10 +21,20 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav mr-auto">
                     <li class="nav-item">
-                        <a class="nav-link" href="index.html#simus">Outros dispositivos</a>
+                        <a class="nav-link" href="index.html">Início</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Outros dispositivos</a>
+                        <div class="dropdown-menu dropdown-dark" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="abacus.html">Ábaco</a>
+                            <a class="dropdown-item" href="sliderule.html">Régua de cálculo</a>
+                        </div>
                     </li>
                 </ul>
             </div>
+            <a href="https://50anos.icmc.usp.br" class="navbar-brand" target="_blank">
+                <img src="./imgs/icmc.png" width="100px" alt="" class="d-inline-block align-right mr-2">
+            </a>
         </nav>
     </header>
 
@@ -60,5 +71,6 @@
     </main>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
     <script src="./scripts/napier.js"></script>
+    <script src="./scripts/navbar_scroll.js"></script>
 </body>
 </html>

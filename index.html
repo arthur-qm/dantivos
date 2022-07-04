@@ -10,10 +10,11 @@
     <link rel="stylesheet" href="./styles/main.css">
     <link rel="stylesheet" href="./styles/descs.css">
     <link rel="stylesheet" href="./styles/index_responsive.css">
+    <link rel="stylesheet" href="./styles/navbar.css">
 </head>
 <body>
     <header>
-        <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+        <nav class="autohide navbar navbar-expand-md navbar-dark bg-dark">
             <a class="navbar-brand" href="#">Dantiv<i class="bi bi-gear"></i>s</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -23,14 +24,22 @@
                     <li class="nav-item">
                         <a class="nav-link" href="#oquee">O que é?</a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#simus">Simulações</a>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#simus" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Simuladores</a>
+                        <div class="dropdown-menu dropdown-dark" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="abacus.html">Ábaco</a>
+                            <a class="dropdown-item" href="napier.html">Ossos de Napier</a>
+                            <a class="dropdown-item" href="sliderule.html">Régua de cálculo</a>
+                        </div>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link">Quem somos?</a>
                     </li>
                 </ul>
             </div>
+            <a href="https://50anos.icmc.usp.br" class="navbar-brand" target="_blank">
+                <img src="./imgs/icmc.png" width="100px" alt="" class="d-inline-block align-right mr-2">
+            </a>
         </nav>
         <div>
             <h1>Dantiv<i class="bi bi-gear"></i>s</h1>
@@ -110,5 +119,6 @@
     <script src="./scripts/js_utils.js"></script>
     <script src="./scripts/smooth_scrolling.js"></script>
     <script src="./scripts/img_changer.js"></script>
+    <script src="./scripts/navbar_scroll.js"></script>
 </body>
 </html>
