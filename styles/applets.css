@@ -38,3 +38,13 @@ h1, h2 {
 video {
     width: 100%;
 }
+
+main > div {
+    padding-bottom: 70px;
+}
+
+div:not(.displays) > img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
